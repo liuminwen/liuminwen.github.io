@@ -4,9 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="虎年大吉, My Blog">
-    <meta name="description" content="新春快乐！虎年大吉，虎虎生威~~
-">
+    <meta name="keywords" content="C++ Notes, My Blog">
+    <meta name="description" content="基本知识变量类型指针
+&amp;lt;变量类型&amp;gt; ** &amp;lt;变量名&amp;gt;
+表示创建一个二维数组，数组元素为&amp;lt;变量类型&amp;gt;
+这种方式 可以创建动态二维数组
+
+数组指针应区别于指针数组
+
+指针数组实际上是一个数组，数组的每个元素存">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +24,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>虎年大吉 | My Blog</title>
+    <title>C++ Notes | My Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -310,12 +316,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/../images/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">虎年大吉</h1>
+                    <h1 class="description center-align post-title">C++ Notes</h1>
                 </div>
             </div>
         </div>
@@ -447,7 +453,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-02
+                    2023-05-09
                 </div>
                 
 
@@ -456,7 +462,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    12
+                    403
                 </div>
                 
 
@@ -473,7 +479,35 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>新春快乐！虎年大吉，虎虎生威~~</p>
+                <h1 id="基本知识"><a href="#基本知识" class="headerlink" title="基本知识"></a>基本知识</h1><h2 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h2><h3 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h3><ul>
+<li><p>&lt;变量类型&gt; ** &lt;变量名&gt;</p>
+<p>表示创建一个二维数组，数组元素为&lt;变量类型&gt;</p>
+<p><strong>这种方式 可以创建动态二维数组</strong></p>
+</li>
+<li><p>数组指针应区别于指针数组</p>
+<ul>
+<li><p><strong>指针数组</strong>实际上是一个数组，数组的每个元素存放的是一个指针类型的元素。例如：</p>
+<p>int *arr[7]  //[]的优先级比*高，说明arr是一个数组，而int *是数组里的内容，即arr是一个含有7个指向int类型元素指针的数组</p>
+</li>
+<li><p><strong>数组指针</strong>实际上是一个指针，该指针指向一个数组。例如：</p>
+<p>int (*arr)[7] //由于[]的优先级比*高，所以写数组指针时必须用括号将*arr括起来</p>
+<p>​                    // 这里arr先与✳️结合，表明arr是一个指针变量，也就是arr指向一个大小为7个整形的数组</p>
+</li>
+<li><p>例子对比</p>
+<p>![image-20230302003640795](/Users/liuminwen/Library/Application Support/typora-user-images/image-20230302003640795.png)</p>
+</li>
+</ul>
+</li>
+<li><p>数组指针和动态二维数组的区别</p>
+<p>举例说明：</p>
+<p>int** a;表示一个内存空间，这个空间用来存放一个指针，这个指针指向一个存放指针的空间，并且指向的这个空间中的指针，指向一个整数； int (<em>p)[10];表示一个内存空间，这个空间用来存放一个指针，这个指针指向一个长度为10、类型为int的数组；和int</em>* a的区别在于，++、+=1之后的结果不一样，其他用法基本相同。</p>
+</li>
+</ul>
+<h1 id="实用函数"><a href="#实用函数" class="headerlink" title="实用函数"></a>实用函数</h1><ul>
+<li><p>暂停，按任意键继续</p>
+</li>
+<li></li>
+</ul>
 
                 
             </div>
@@ -500,7 +534,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://liuminwen.github.io/2022/02/02/%E8%99%8E%E5%B9%B4%E5%A4%A7%E5%90%89/">http://liuminwen.github.io/2022/02/02/%E8%99%8E%E5%B9%B4%E5%A4%A7%E5%90%89/</a>
+                    <a href="http://liuminwen.github.io/2023/05/09/C++%20notes/">http://liuminwen.github.io/2023/05/09/C++%20notes/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -713,9 +747,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2023/05/09/C++%20notes/">
                     <div class="card-image">
@@ -733,9 +768,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-09
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -744,6 +779,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -762,13 +798,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/23/hello-world/">
+                <a href="/2022/02/02/%E8%99%8E%E5%B9%B4%E5%A4%A7%E5%90%89/">
                     <div class="card-image">
                         
+                        <img src="/../images/2.jpg" class="responsive-img" alt="虎年大吉">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">虎年大吉</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -779,15 +814,23 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-23
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-02
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            Liu
+                            lmw
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Typora/">
+                        <span class="chip bg-color">Typora</span>
+                    </a>
+                    
                 </div>
                 
             </div>
